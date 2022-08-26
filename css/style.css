@@ -284,6 +284,72 @@ p {
     background-position: top;
 }
 
+/* 5. Product */
+.products_wrapper .product-items {
+    position: relative;
+    overflow: hidden;
+}
+
+.products_wrapper .product-items img {
+    width: 100%;
+    -webkit-transition: all 400ms ease-in 0s;
+    transition: all 400ms ease-in 0s;
+}
+
+.products_wrapper .product-items:hover img {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+}
+
+.products_wrapper .product-items::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-black);
+    opacity: 0;
+    z-index: 1;
+    -webkit-transition: all 400ms ease-in 0s;
+    transition: all 400ms ease-in 0s;
+}
+
+.products_wrapper .product-items:hover::before {
+    opacity: 0.6;
+}
+
+.products_wrapper .product-item-wrap {
+    position: absolute;
+    left: 1.375rem;
+    right: 1.375rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.products_wrapper .product-items .product-content {
+    width: 100%;
+    border: .125rem solid var(--bg-white);
+    padding: 1rem 1rem;
+    -webkit-transform: scale3d(1.2, 1.2, 1.2);
+    transform: scale3d(1.2, 1.2, 1.2);
+    -webkit-transition: all 500ms ease-in 0s;
+    transition: all 500ms ease-in 0s;
+    opacity: 0;
+}
+
+.products_wrapper .product-items .product-content p,
+.products_wrapper .product-items .product-content a {
+    font-size: .8rem;
+}
+
+.products_wrapper .product-items:hover .product-content {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+}
+
 
 /* 11. Footer */
 .footer_wrapper {
