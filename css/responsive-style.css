@@ -45,6 +45,7 @@
         font-size: 0.875rem;
     }
 
+
     /* Booking Area */
     .booking-area {
         font-size: .875rem;
@@ -196,6 +197,13 @@
     p {
         font-size: .8125rem;
         line-height: 1.5rem;
+    }
+
+    /* Nav Bar Buttons */
+    .menu-navbar-nav .btn_wrapper {
+        margin-top: 1rem;
+        flex-direction: column;
+        gap: 10px;
     }
 
     /* product */

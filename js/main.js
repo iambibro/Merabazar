@@ -24,7 +24,7 @@ nabBar.forEach(function (a) {
 
 // Swiper Slider
 var swiper = new Swiper(".mySwiper", {
-    direction: "vertical",
+    // direction: "vertical",
     loop: true,
     pagination: {
         el: ".swiper-pagination",
@@ -35,28 +35,6 @@ var swiper = new Swiper(".mySwiper", {
     },
 });
 
-
-// Counter Design
-document.addEventListener("DOMContentLoaded", () => {
-    function counter(id, start, end, duration) {
-        let obj = document.getElementById(id);
-        let current = start;
-        let range = end - start;
-        let increment = end > start ? 1 : -1;
-        let step = Math.abs(Math.floor(duration / range));
-        let timer = setInterval(() => {
-            current += increment;
-            obj.textContent = current;
-            if (current == end) {
-                clearInterval(timer);
-            }
-        }, step);
-    }
-    counter("count1", 0, 1287, 3000);
-    counter("count2", 100, 2087, 3000);
-    counter("count3", 0, 2088, 3000);
-    counter("count4", 0, 2277, 3000);
-})
 
 // Our Partner
 var swiper = new Swiper(".our-partner", {
