@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+/* 1. General Section */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+:root {
+    /* Background Color */
+    --primary-color: #021832;
+    /* --secondary-color: #caa169; */
+    --secondary-color: #f77f00;
+    --bg-color: #f4f4f4;
+    --bg-white: #fff;
+    --bg-black: #000;
+
+    /* Text Style */
+    --primary-font: 'Poppins', sans-serif;
+    --secondary-font: 'Oswald', sans-serif;
+    --primary-text: #021832;
+    /* --secondary-text: #caa169; */
+    --secondary-text: #f77f00;
+    --text-white: #fff;
+    --text-black: #151515;
+    --text-gray: #e4e4e4;
+}
+
+
+body {
+    font-family: var(--primary-font);
+    background-color: var(--bg-white);
+}
+
+/* 2. Sign In Section */
+.divider:after,
+.divider:before {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #eee;
+}
+
+.h-custom {
+    height: calc(100% - 73px);
+}
+
+@media (max-width: 450px) {
+    .h-custom {
+        height: 100%;
+    }
+}
+
+.btn-sign {
+    background-color: var(--secondary-color);
+    border: none;
+    color: var(--bg-color);
+}
+
+.btn-sign:hover,
+.btn-sign:active {
+    background-color: var(--bg-black);
+}

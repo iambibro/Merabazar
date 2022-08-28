@@ -12,7 +12,8 @@
 :root {
     /* Background Color */
     --primary-color: #021832;
-    --secondary-color: #caa169;
+    /* --secondary-color: #caa169; */
+    --secondary-color: #f77f00;
     --bg-color: #f4f4f4;
     --bg-white: #fff;
     --bg-black: #000;
@@ -21,7 +22,8 @@
     --primary-font: 'Poppins', sans-serif;
     --secondary-font: 'Oswald', sans-serif;
     --primary-text: #021832;
-    --secondary-text: #caa169;
+    /* --secondary-text: #caa169; */
+    --secondary-text: #f77f00;
     --text-white: #fff;
     --text-black: #151515;
     --text-gray: #e4e4e4;
@@ -123,6 +125,22 @@ p {
     font-size: 1rem;
     color: var(--text-black);
     line-height: 1.625rem;
+}
+
+ul>li {
+    font-size: 1.2rem;
+    color: var(--text-black);
+    line-height: 1.625rem;
+    font-weight: 400;
+}
+
+ul>li span {
+    color: var(--secondary-text);
+}
+
+ul>li::marker {
+    font-size: 1.6rem;
+    color: var(--secondary-color);
 }
 
 .section-title:after {
@@ -260,6 +278,11 @@ p {
 
 }
 
+.banner_wrapper .swiper .slide-caption h1>span {
+    color: var(--secondary-color);
+    border-bottom: 5px solid var(--bg-white);
+}
+
 .banner_wrapper .swiper .slide-caption p {
     max-width: 37.5rem;
     margin: 0 auto;
@@ -356,8 +379,16 @@ p {
     transform: scale3d(1, 1, 1);
 }
 
+/* 11. Reward Section */
+.rewards_wrapper {
+    padding-top: 9.375rem;
+}
 
-/* 11. Footer */
+.rewards-img {
+    background-position: top;
+}
+
+/* 12. Footer */
 .footer_wrapper {
     background-color: var(--bg-black);
 }
