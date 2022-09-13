@@ -23,6 +23,8 @@
             <link rel="stylesheet" href="../../css/style.css">
             <link rel="stylesheet" href="../../css/responsive-style.css">
             <link rel="stylesheet" href="../../css/sign-in_sign_up.css">
+            <link rel="stylesheet" href="../../css/registration-form.style.css">
+
         </head>
     </head>
 
@@ -70,9 +72,13 @@
                                 </li>
 
                                 <!-- Log In / Sign Up -->
-                                <div class="btn_wrapper">
+                                <!-- Log In / Sign Up -->
+                                <div class="btn_wrapper d-flex">
                                     <li class="nav-item nav-btn">
-                                        <a class="main-btn" href="sign-up.html">Sign Up</a>
+                                        <a class="main-btn" href="./sign-in.html">Log In</a>
+                                    </li>
+                                    <li class="nav-item nav-btn">
+                                        <a class="main-btn" href="./sign-up.html">Sign Up</a>
                                     </li>
                                 </div>
                             </ul>
@@ -84,201 +90,279 @@
         <!-- Navigation Bar End-->
 
         <!-- Registration Section Start -->
-        <form action="/post">
-            <div class="form first">
-                <div class="details personal">
-                    <span class="title">Personal Details</span>
-                    <!-- FIELD START FROM HERE -->
-                    <div class="fields">
-                        <div class="input-field">
-                            <label>Full Name</label>
-                            <input type="text" placeholder="Enter your name" required>
-                        </div>
+        <main class="registration-form container">
+            <section class="h-100 bg-dark">
+                <div class="container py-5 h-100">
+                    <div class="row d-flex justify-content-center align-items-center h-100">
+                        <div class="col">
+                            <div class="card card-registration my-4">
+                                <div class="row g-0">
+                                    <div class="col-xl-6 d-none d-xl-block">
+                                        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/img4.webp"
+                                            alt="Sample photo" class="img-fluid"
+                                            style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <div class="card-body p-md-5 text-black">
+                                            <h3 class="mb-5 text-uppercase">Personal <span>Details</span></h3>
 
-                        <div class="input-field">
-                            <label>Fathers Name</label>
-                            <input type="text" placeholder="Enter your name" required>
-                        </div>
+                                            <div class="row">
+                                                <div class="col-md-6 mb-4">
+                                                    <div class="form-outline">
+                                                        <input type="text" id="form3Example1m"
+                                                            class="form-control form-control-lg" />
+                                                        <label class="form-label" for="form3Example1m">First
+                                                            name</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 mb-4">
+                                                    <div class="form-outline">
+                                                        <input type="text" id="form3Example1n"
+                                                            class="form-control form-control-lg" />
+                                                        <label class="form-label" for="form3Example1n">Last name</label>
+                                                    </div>
+                                                </div>
+                                            </div>
 
-                        <div class="input-field">
-                            <label>Date of Birth</label>
-                            <input type="date" placeholder="Enter birth date" required>
-                        </div>
+                                            <div class="row">
+                                                <div class="col-md-6 mb-4">
+                                                    <div class="form-outline">
+                                                        <input type="text" id="form3Example1m1"
+                                                            class="form-control form-control-lg" />
+                                                        <label class="form-label" for="form3Example1m1">Mother's
+                                                            name</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 mb-4">
+                                                    <div class="form-outline">
+                                                        <input type="text" id="form3Example1n1"
+                                                            class="form-control form-control-lg" />
+                                                        <label class="form-label" for="form3Example1n1">Father's
+                                                            name</label>
+                                                    </div>
+                                                </div>
+                                            </div>
 
-                        <div class="input-field">
-                            <label>Gender</label>
-                            <select required>
-                                <option disabled selected>Select gender</option>
-                                <option>Male</option>
-                                <option>Female</option>
-                                <option>Others</option>
-                            </select>
-                        </div>
 
-                        <div class="input-field">
-                            <label>Place Of Birth</label>
-                            <input type="text" placeholder="Enter City Name" required>
-                        </div>
 
-                        <div class="input-field">
-                            <label>City</label>
-                            <input type="text" placeholder="Enter City Name" required>
-                        </div>
-                    </div>
-                    <div class="fields">
-                        <div class="input-field">
-                            <label>Marital Status</label>
-                            <select required>
-                                <option disabled selected>Select Marital Status</option>
-                                <option>Married</option>
-                                <option>Unmarried</option>
-                            </select>
-                        </div>
+                                            <div class="d-md-flex justify-content-start align-items-center mb-4 py-2">
 
-                        <div class="input-field">
-                            <label>Nationality</label>
-                            <input type="text" placeholder="Enter your Nationality" required>
-                        </div>
+                                                <h6 class="mb-0 me-4">Gender: </h6>
 
-                        <div class="input-field">
-                            <label>PAN</label>
-                            <input type="text" placeholder="Enter your PAN Number" required>
-                        </div>
+                                                <div class="form-check form-check-inline mb-0 me-4">
+                                                    <input class="form-check-input" type="radio"
+                                                        name="inlineRadioOptions" id="femaleGender" value="option1" />
+                                                    <label class="form-check-label" for="femaleGender">Female</label>
+                                                </div>
 
-                        <div class="input-field">
-                            <label>House Number</label>
-                            <input type="number" placeholder="House Number" required>
-                        </div>
+                                                <div class="form-check form-check-inline mb-0 me-4">
+                                                    <input class="form-check-input" type="radio"
+                                                        name="inlineRadioOptions" id="maleGender" value="option2" />
+                                                    <label class="form-check-label" for="maleGender">Male</label>
+                                                </div>
 
-                        <div class="input-field">
-                            <label>Address Line 1</label>
-                            <input type="text" placeholder="Address line 1" required>
-                        </div>
+                                                <div class="form-check form-check-inline mb-0">
+                                                    <input class="form-check-input" type="radio"
+                                                        name="inlineRadioOptions" id="otherGender" value="option3" />
+                                                    <label class="form-check-label" for="otherGender">Other</label>
+                                                </div>
 
-                        <div class="input-field">
-                            <label>Address Line 2</label>
-                            <input type="text" placeholder="Address line 2" required>
-                        </div>
-                        <div class="input-field">
-                            <label>PIN</label>
-                            <input type="number" placeholder="PIN Code" required>
-                        </div>
-                        <div class="input-field">
-                            <label>State</label>
-                            <input type="text" placeholder="Enter Your State" required>
-                        </div>
-                        <div class="input-field">
-                            <label>Country</label>
-                            <input type="text" placeholder="Enter Your Country" required>
-                        </div>
-                        <div class="input-field">
-                            <label>Name of Nominee</label>
-                            <input type="text" placeholder="Enter Nominee Name" required>
-                        </div>
-                        <div class="input-field">
-                            <label>Nominee Gender</label>
-                            <select required>
-                                <option disabled selected>Select gender</option>
-                                <option>Male</option>
-                                <option>Female</option>
-                                <option>Others</option>
-                            </select>
-                        </div>
-                        <div class="input-field">
-                            <label>Relationship with Nominee</label>
-                            <input type="text" placeholder="Enter Nominee Name" required>
+                                            </div>
+
+
+
+                                            <div class="form-outline mb-4">
+                                                <input type="date" id="dobFromInput"
+                                                    class="form-control form-control-lg" value="2022-01-01" />
+                                                <label class="form-label" for="dobFromInput">DOB</label>
+                                            </div>
+
+                                            <div class="form-outline mb-4">
+                                                <input type="text" id="pobFromInput"
+                                                    class="form-control form-control-lg" />
+                                                <label class="form-label" for="pobFromInput">Place of Birth</label>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6 mb-4">
+                                                    <label class="form-label" for="maritalStatus">Marital Status</label>
+                                                    <select id='maritalStatus' class="select">
+                                                        <option value="1">Marital Status</option>
+                                                        <option value="2">Married</option>
+                                                        <option value="3">Unmarried</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-outline mb-4">
+                                                <input type="text" id="form3Example8"
+                                                    class="form-control form-control-lg" />
+                                                <label class="form-label" for="form3Example8">Current Address</label>
+                                            </div>
+
+                                            <div class="form-outline mb-4">
+                                                <input type="text" id="form3Example8"
+                                                    class="form-control form-control-lg" />
+                                                <label class="form-label" for="form3Example8">Permanent Address</label>
+                                            </div>
+
+                                            <div class="form-outline mb-4">
+                                                <input type="text" id="nameOfNominee"
+                                                    class="form-control form-control-lg" />
+                                                <label class="form-label" for="nameOfNominee">Name of Nominee</label>
+                                            </div>
+
+                                            <div class="form-outline mb-4">
+                                                <label class="form-label mr-2">Nominee Gender</label>
+                                                <select class="select" required>
+                                                    <option disabled selected>Select gender</option>
+                                                    <option>Male</option>
+                                                    <option>Female</option>
+                                                    <option>Others</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-outline mb-4">
+                                                <input type="text" class="form-control" required>
+                                                <label class="form-label">Relationship with Nominee</label>
+                                            </div>
+
+                                            <div class="form-outline mb-4">
+                                                <input type="text" id="form3Example90"
+                                                    class="form-control form-control-lg" />
+                                                <label class="form-label" for="form3Example90">Pincode</label>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="form-outline">
+                                                    <input type="text" id="CountryInput"
+                                                        class="form-control form-control-lg" />
+                                                    <label class="form-label" for="CountryInput">Country</label>
+                                                </div>
+
+                                                <div class="col-md-6 mb-4">
+                                                    <div class="form-outline">
+                                                        <input type="text" id="form3Example1n"
+                                                            class="form-control form-control-lg" />
+                                                        <label class="form-label" for="form3Example1n">State</label>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-md-6 mb-4">
+
+                                                    <div class="form-outline">
+                                                        <input type="text" id="form3Example1n"
+                                                            class="form-control form-control-lg" />
+                                                        <label class="form-label" for="form3Example1n">City</label>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="form-outline mb-4">
+                                                <input type="text" id="form3Example97"
+                                                    class="form-control form-control-lg" />
+                                                <label class="form-label" for="form3Example97">Email ID</label>
+                                            </div>
+
+                                            <div class="d-flex justify-content-end pt-3">
+                                                <button type="button" class="btn btn-light btn-lg">Reset all</button>
+                                                <button type="button" class="btn main-btn btn-lg ms-2">Submit
+                                                    form</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </section>
+        </main>
 
-                <!-- Registration Section End -->
+        <!-- Registration Section End -->
 
-                <!-- Footer Section -->
-                <section id="contact" class="footer_wrapper mt-3 mt-md-0 pb-0">
-                    <div class="container pb-3">
-                        <div class="row">
-                            <div class="col-lg-3 col-md-6">
-                                <h5>Office Location</h5>
-                                <p class="ps-0">MeraBazar pvt. ltd.
-                                </p>
-                                <div class="contact-info">
-                                    <ul class="list-unstyled">
-                                        <li><a href="#"><i class="fa-solid fa-home me-3"></i>Subhash Nagar, Haiderpara,
-                                                siliguri -
-                                                734001</a></li>
-                                        <li><a href="#"><i class="fa-solid fa-phone me-3"></i>+91 8509738606</a></li>
-                                        <li><a href="#"><i
-                                                    class="fa-solid fa-envelope me-3"></i>biswajitpall930@gmail.com</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-
-                            <div class="col-lg-3 col-md-6">
-                                <h5>More Links</h5>
-                                <ul class="link-widget p-0">
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="#">Our Office</a></li>
-                                    <li><a href="#">Delivery</a></li>
-                                    <li><a href="#">Our Store</a></li>
-                                    <li><a href="#">Guarantee</a></li>
-
-                                    <li><a href="#">Company Policy</a></li>
-                                </ul>
-                            </div>
-
-
-                            <div class="col-lg-3 col-md-6">
-                                <h5>More Links</h5>
-                                <ul class="link-widget p-0">
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="#">Our Office</a></li>
-                                    <li><a href="#">Delivery</a></li>
-                                    <li><a href="#">Our Store</a></li>
-                                    <li><a href="#">Guarantee</a></li>
-
-                                    <li><a href="#">Company Policy</a></li>
-                                </ul>
-                            </div>
-
-                            <div class="col-lg-3 col-md-6">
-                                <h5>Newsletter</h5>
-                                <div class="form-group mb-4">
-                                    <input type="email" class="form-control bg-transparent"
-                                        placeholder="Enter your Email here">
-                                    <button type="submit"
-                                        class="main-btn rounded-2 mt-3 border-white text-white">Subscribe</button>
-                                </div>
-                                <h5>Stay Connected</h5>
-                                <ul class="social-network d-flex align-items-center p-0">
-                                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-vimeo-v"></i></a></li>
-                                </ul>
-                            </div>
+        <!-- Footer Section -->
+        <section id="contact" class="footer_wrapper mt-3 mt-md-0 pb-0">
+            <div class="container pb-3">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <h5>Office Location</h5>
+                        <p class="ps-0">MeraBazar pvt. ltd.
+                        </p>
+                        <div class="contact-info">
+                            <ul class="list-unstyled">
+                                <li><a href="#"><i class="fa-solid fa-home me-3"></i>Subhash Nagar, Haiderpara,
+                                        siliguri -
+                                        734001</a></li>
+                                <li><a href="#"><i class="fa-solid fa-phone me-3"></i>+91 8509738606</a></li>
+                                <li><a href="#"><i class="fa-solid fa-envelope me-3"></i>biswajitpall930@gmail.com</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
 
-                    <!-- Copyright -->
-                    <div class="container-fluid copyright-section text-center text-capitalize">
-                        <p>Copyright <a href="#">©️ MeraBazar.</a> All Rights Reserved</p>
+
+                    <div class="col-lg-3 col-md-6">
+                        <h5>More Links</h5>
+                        <ul class="link-widget p-0">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Our Office</a></li>
+                            <li><a href="#">Delivery</a></li>
+                            <li><a href="#">Our Store</a></li>
+                            <li><a href="#">Guarantee</a></li>
+
+                            <li><a href="#">Company Policy</a></li>
+                        </ul>
                     </div>
-                </section>
-                <!-- Footer Section End -->
 
 
+                    <div class="col-lg-3 col-md-6">
+                        <h5>More Links</h5>
+                        <ul class="link-widget p-0">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Our Office</a></li>
+                            <li><a href="#">Delivery</a></li>
+                            <li><a href="#">Our Store</a></li>
+                            <li><a href="#">Guarantee</a></li>
 
-                <!-- Script Files -->
-                <!-- Bootstrap 5 JS -->
-                <script src="../../js/bootstrap.bundle.min.js"></script>
-                <!-- Swiper JS -->
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.1/swiper-bundle.min.js"
-                    integrity="sha512-naEQG74IcOLQ6K/B1PmhIcZ4i3YE2FXs2zm603E1Q3shbron+PmYLg44/q+xAymD/RvskZ2H8l1Qa7I5qELlrg=="
-                    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-                <!-- Main Js -->
-                <script src="../../js/main.js"></script>
+                            <li><a href="#">Company Policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <h5>Newsletter</h5>
+                        <div class="form-group mb-4">
+                            <input type="email" class="form-control bg-transparent" placeholder="Enter your Email here">
+                            <button type="submit"
+                                class="main-btn rounded-2 mt-3 border-white text-white">Subscribe</button>
+                        </div>
+                        <h5>Stay Connected</h5>
+                        <ul class="social-network d-flex align-items-center p-0">
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-vimeo-v"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="container-fluid copyright-section text-center text-capitalize">
+                <p>Copyright <a href="#">©️ MeraBazar.</a> All Rights Reserved</p>
+            </div>
+        </section>
+        <!-- Footer Section End -->
+
+        <!-- Script Files -->
+        <!-- Bootstrap 5 JS -->
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <!-- Swiper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.1/swiper-bundle.min.js"
+            integrity="sha512-naEQG74IcOLQ6K/B1PmhIcZ4i3YE2FXs2zm603E1Q3shbron+PmYLg44/q+xAymD/RvskZ2H8l1Qa7I5qELlrg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- Main Js -->
+        <script src="../../js/main.js"></script>
 
     </body>
 

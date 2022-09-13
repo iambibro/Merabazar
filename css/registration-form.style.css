@@ -40,32 +40,47 @@ body {
     background-color: var(--bg-white);
 }
 
-/* 2. Sign In Section */
-.divider:after,
-.divider:before {
-    content: "";
-    flex: 1;
-    height: 1px;
-    background: #eee;
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+    font-size: 1rem;
+    line-height: 2.15;
+    padding-left: .75em;
+    padding-right: .75em;
 }
 
-.h-custom {
-    height: calc(100% - 73px);
+.card-registration .select-arrow {
+    top: 13px;
 }
 
-@media (max-width: 450px) {
-    .h-custom {
-        height: 100%;
-    }
+.main-btn {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 0.0625rem solid var(--primary-color);
+    padding: .375rem 1.875rem;
+    border-radius: 3.125rem;
+    line-height: 1.75rem;
+    display: inline-block;
+    transition: all 0.3s ease-out 0s;
 }
 
-.btn-sign {
+.main-btn:hover {
     background-color: var(--secondary-color);
-    border: none;
-    color: var(--bg-color);
+    border-color: var(--secondary-color);
+    color: var(--text-white);
 }
 
-.btn-sign:hover,
-.btn-sign:active {
-    background-color: var(--bg-black);
+.registration-form {
+    position: relative;
+    width: auto;
+    margin-top: 16px;
+    min-height: 550px;
+    background-color: var(--bg-white);
+}
+
+.container form .form {
+    position: absolute;
+    background-color: var(--bg-white);
+    transition: 0.3s ease;
 }

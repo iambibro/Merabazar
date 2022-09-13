@@ -2,4 +2,4 @@
 
 shopping website
 
-Site Demo : https://iambibro.github.io/Merabazar/
+Website Link : https://merabazar.net/index.html
