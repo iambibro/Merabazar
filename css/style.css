@@ -1,3 +1,9 @@
+/* 
+Developer Details:
+Name - Soumitra Saha
+Email - soumitrosahaofficial@gmail.com
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 
@@ -102,6 +108,15 @@ h3 {
 
 h3 span {
     color: var(--secondary-color);
+}
+
+h4 {
+    color: var(--text-white);
+}
+
+h4 span {
+    cursor: pointer;
+    border-bottom: 2px solid var(--secondary-color);
 }
 
 h5 {
